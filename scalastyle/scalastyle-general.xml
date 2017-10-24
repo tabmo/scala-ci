@@ -63,7 +63,7 @@
 
     <check enabled="true" class="org.scalastyle.scalariform.EnsureSingleSpaceAfterTokenChecker" level="error">
         <parameters>
-            <parameter name="tokens">PACKAGE, WHILE, CASE, NEW, DO, EQUALS, SUBTYPE, SEALED, TYPE, FINAL, IMPORT, RETURN, VAL, VAR, ELSE, MATCH, TRY, SUPERTYPE, OP, CATCH, THROW, CLASS, DEF, FOR, LARROW, ABSTRACT, IF, OBJECT, COMMA, YIELD, PIPE, IMPLICIT, LAZY, TRAIT, FORSOME, FINALLY, OVERRIDE, ARROW, EXTENDS</parameter>
+            <parameter name="tokens">PACKAGE, WHILE, CASE, NEW, DO, EQUALS, SUBTYPE, SEALED, FINAL, IMPORT, RETURN, VAL, VAR, ELSE, MATCH, TRY, SUPERTYPE, OP, CATCH, THROW, CLASS, DEF, FOR, LARROW, ABSTRACT, IF, OBJECT, COMMA, YIELD, PIPE, IMPLICIT, LAZY, TRAIT, FORSOME, FINALLY, OVERRIDE, ARROW, EXTENDS</parameter>
         </parameters>
     </check>
     <check enabled="true" class="org.scalastyle.scalariform.EnsureSingleSpaceBeforeTokenChecker" level="error">
