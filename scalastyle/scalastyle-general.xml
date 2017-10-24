@@ -85,7 +85,7 @@
     <check enabled="true" class="org.scalastyle.scalariform.ImportOrderChecker" level="error">
         <parameters>
             <parameter name="groups">scalajava,libs,tabmo</parameter>
-            <parameter name="group.scalajava">^(scala|java)\..+</parameter>
+            <parameter name="group.scalajava">^(scala|java|javax)\..+</parameter>
             <parameter name="group.libs">^(org|com|net|fr|shapeless|cats|akka|sangria|de|nl|buildinfo|io\.circe|spray)\..*</parameter>
             <parameter name="group.tabmo">^(io\.tabmo)\.?.*</parameter>
         </parameters>
