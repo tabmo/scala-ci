@@ -82,11 +82,17 @@
         </parameters>
         <customMessage><![CDATA[Put exactly a single space between 'if' and the following parenthesis.]]></customMessage>
     </check>
+    <check level="error" class="org.scalastyle.file.RegexChecker" enabled="true">
+        <parameters>
+            <parameter name="regex"><![CDATA[implicit (.*)(val|def) [a-z][A-Za-z0-9]*\s*=.*]]></parameter>
+        </parameters>
+        <customMessage><![CDATA[Implicit val and methods must be typed]]></customMessage>
+    </check>
     <check enabled="true" class="org.scalastyle.scalariform.ImportOrderChecker" level="error">
         <parameters>
             <parameter name="groups">scalajava,libs,tabmo</parameter>
             <parameter name="group.scalajava">^(scala|java|javax)\..+</parameter>
-            <parameter name="group.libs">^(org|com|net|fr|shapeless|cats|akka|sangria|de|nl|buildinfo|io\.circe|spray)\..*</parameter>
+            <parameter name="group.libs">^(org|com|net|fr|shapeless|cats|akka|sangria|de|nl|buildinfo|io\.circe|spray|orestes|enumeratum|io\.grpc|it)\..*</parameter>
             <parameter name="group.tabmo">^(io\.tabmo)\.?.*</parameter>
         </parameters>
     </check>
